@@ -1,3 +1,4 @@
+
 puts "🌱 Seeding data..."
 
 # Make 10 users
@@ -10,7 +11,7 @@ end
   # create a book  with random data
   book = Book.create(
     name: Faker::Name.unique.name,
-    location: Faker::Name.unique.name
+    author: Faker::Name.unique.name
   )
   
   # create between 1 and 5 reviews for each res

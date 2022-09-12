@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 2022_09_08_200330) do
     t.integer "book_id"
     t.integer "user_id"
   end
-
   create_table "users", force: :cascade do |t|
     t.string "name"
   end
