@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2022_09_08_200330) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "books", force: :cascade do |t|
     t.string "name"
     t.string "author"
@@ -22,7 +25,9 @@ ActiveRecord::Schema.define(version: 2022_09_08_200330) do
     t.integer "book_id"
     t.integer "user_id"
   end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
   end
+
 end
